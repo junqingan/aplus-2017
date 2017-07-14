@@ -1,0 +1,273 @@
+.main-tableB{
+    background: #fff;
+    min-height: 840px;
+    .cf;
+    .tableB-title{
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 24px;
+        color:#333;
+        margin-top: 20px;
+        padding: 10px 0;
+    }
+    .tableB{
+        width: 1190px;
+        word-break: break-all;
+        background: #fff;
+        margin-top: 30px;
+        margin-bottom: 130px;
+        border: 1px solid #E0E8F3;
+        font-size: 12px;
+        tbody{
+            tr{
+                td{
+                    width: 75%;
+                    line-height: 40px;
+                    padding: 7px 0 7px 20px;
+                    border-bottom: 1px solid #F2F2F2;
+                    &.tr{
+                        text-align: right;
+                        width: 25%;
+                        border-right: 1px solid #E0E8F3;
+                    }
+                    a{
+                        display: inline;
+                        &.in-epg{
+                            color: #0097ed;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    input{
+                        width: 300px;
+                        border: 1px solid #ccc;
+                        .border-radius(3px);
+                        height: 38px;
+                        line-height: 38px;
+                        color:#494949;
+                        padding: 0 10px;
+                    }
+                    label{
+                        padding: 0 5px;
+                        margin: 0 10px;
+                    }
+                    // 地域屏蔽展开
+                    .scope-show{
+                        cursor: pointer;
+                        i{
+                            display: inline-block;
+                            width: 14px;
+                            height: 14px;
+                            background: url(../assets/icons.png) -5px -773px no-repeat;
+                            vertical-align: sub;
+                            margin-left: 5px;
+                        }
+                        &.hide{
+                            i{
+                                background-position: -36px -773px;
+                            }
+                        }
+                    }
+
+                    /*方形input*/
+                    .diyinput{
+                        width: 14px;
+                        height: 14px;
+                        border: 0;
+                        position: relative;
+                        vertical-align: sub;
+                        &:before{
+                            content: '';
+                            background: url(../assets/icons.png) -3px -797px no-repeat;
+                            position: absolute;
+                            width: 14px;
+                            height: 14px;
+                        }
+                        &:checked:before{
+                            background: url(../assets/icons.png) -3px -824px no-repeat;
+                        }
+                    }
+                    /*圆形input*/
+                    .radius-input{
+                        height: 14px;
+                        width: 14px;
+                        border: 0;
+                        position: relative;
+                        vertical-align: sub;
+                        &:before{
+                            content: '';
+                            background: url(../assets/icons.png) -3px -708px no-repeat;
+                            position: absolute;
+                            width: 14px;
+                            height: 14px;
+                        }
+                        &:checked:before{
+                            background: url(../assets/icons.png) -3px -741px no-repeat;
+                        }
+                    }
+                    /*地域屏蔽*/
+                    .bg_gray {
+                        margin: 7px 0px 0px 0px;
+                        padding: 5px;
+                        background: #F0F0F0;
+                        border: 1px solid #E1E1E1;
+                        width: 94%;
+                        float: left;
+                        span {
+                            display: inline-block;
+                            width: 110px;
+                            line-height: 32px;
+                            input{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    /*下拉选择框*/
+                    .drop{
+                        z-index: 110;
+                        display: inline-block;
+                        position: relative;
+                        .dropBox{
+                            display: inline-block;
+                            width: 280px;
+                            height: 38px;
+                            line-height: 38px;
+                            padding: 0 10px;
+                            background: #fff;
+                            border: 1px solid #d1d1d1;
+                            .border-radius(3px);
+                            color: #666;
+                            position: relative;
+                            i{
+                                position: absolute;
+                                right: 10px;
+                                top: 18px;
+                                width: 0;
+                                height: 0;
+                                font-size: 0;
+                                line-height: 0;
+                                border-width: 5px;
+                                border-color: rgb(152, 152, 152) transparent transparent transparent;
+                                border-style: solid dashed dashed dashed;
+                            }
+                        }
+                        .morech{
+                            display: none; 
+                            background: #fff;
+                            z-index: 100;
+                            width: 300px;
+                            height: 157px;
+                            border: 1px solid #d1d1d1;
+                            position: absolute;
+                            overflow: hidden;
+                            overflow-y: auto;
+                            top: 38px;
+                            left: 0;
+                            // 自定义滚动条
+                            &::-webkit-scrollbar {
+                                width: 10px;
+                                height: 10px;
+                                background-color: #F5F5F5;
+                            }
+                            &::-webkit-scrollbar-track {
+                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+                                border-radius: 10px;
+                                background-color: #F5F5F5;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 10px;
+                                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5);
+                                background-color: #969696;
+                            }
+
+                            .box-shadow(2px,2px,5px,#e3e3e3);
+                            ul{
+                                li{
+                                    height: 38px;
+                                    line-height: 38px;
+                                    padding: 0 10px;
+                                    width: 378px;
+                                    margin-bottom: 0;
+                                    border-bottom: dashed 1px #d1d1d1;
+                                    a{
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                        color: #666;
+                                    }
+                                    &:hover{
+                                        background: #e8f1f7;
+                                    }
+                                    &:last-child{
+                                        border-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover{
+                            .dropBox{
+                                i{
+                                    right: 10px;
+                                    top: 13px;
+                                    border-color: transparent transparent #989898;
+                                    border-style: dashed dashed solid;
+                                }
+                            }
+                             .morech{
+                                 display: block;
+                             }
+                        }
+                    }
+                    select{
+                        width: 200px;
+                        height: 38px;
+                        line-height: 38px;
+                        .border-radius(3px);
+                        border: 1px solid #ccc;
+                    }
+                    // 新建模版按钮
+                    .btnA{
+                        float: right;
+                        width: 90px;
+                        height: 38px;
+                        line-height: 38px;
+                        background: #0097ed;
+                        color: #fff;
+                        .border-radius(3px);
+                        text-align: center;
+                        margin: 0 5px;
+                    }
+                    /*保存取消按钮*/
+                    .btndiv{
+                        .btn{
+                            font-size: 14px;
+                            width: 130px;
+                            display: inline-block;
+                            height: 38px;
+                            line-height: 38px;
+                            text-align: center;
+                            color: #fff;
+                            margin: 20px 0 0;
+                            .border-radius(3px);
+                            &.save-btn{
+                                background:#0097ed;
+                                margin-right: 20px;
+                            }
+                            &.undo-btn{
+                                 background:#e5e5e5;
+                                 color: #666666;
+                            }
+                            &.cached-update{
+                                background:#0097ed;
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>##login@</title>
+		<link rel="stylesheet" href="../dist/style/login.min.css">
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+		<script src="../src/js/index.js"></script>
+	</head>
+
+	<body>
+		<div class="main cf">
+			<div class="login-box">
+				<div class="login-con">
+					<div class="login-hd">
+						<img src="../dist/assets/bg2.png" alt="">
+					</div>
+					<div class="login-bd">
+						<div class="nav-tabs">
+							<!-- 当前选择tab 添加类名 ：cur -->
+							<div class="nav-justified cur">
+								<a href="javascript:;" data-toggle="tab" class="">豆芽号登录</a>
+							</div>
+							<div class="nav-justified ">
+								<a href="javascript:;" data-toggle="tab" class="">域账号登录</a>
+							</div>
+							<div class="nav-justified ">
+								<a href="javascript:;" data-toggle="tab" class="">管理员登录</a>
+							</div>
+							<div class="tab-point-box">
+								<div class="tab-point"></div>
+							</div>
+						</div>
+						<div class="tab-cons">
+							<div class="form-tab-pane">
+								<div class="tab-pane douya">
+									<a href="javscript:;" class="btn btn-douya">豆芽号登录</a>
+									<p class="login-box-msg">欢迎登录xx管理平台</p>
+								</div>
+								<div class="tab-pane domain-account">
+									<a href="javscript:;" class="btn btn-yuzhanghao">域账号登录</a>
+									<p class="login-box-msg">欢迎登录MIP媒资管理平台</p>
+								</div>
+								<div class="tab-pane admin">
+									<form id="loginform" class="admin-login-box">
+										<div class="form-group has-feedback">
+											<div class="err-msg"><span>您的网络不给力哦，请稍后在试</span></div>
+											<div class="input-group">
+												<span class="input-group-addon">用户名：</span>
+												<input type="text" id="userName" name="userName" class="form-control valid" value="admin" placeholder="请输入用户名" aria-required="true"
+												    aria-invalid="false">
+											</div>
+											<div class="input-group margin-top">
+												<span class="input-group-addon">密码：</span>
+												<input type="password" id="password" name="password" class="form-control valid" value="aA123456" placeholder="请输入密码" aria-required="true">
+											</div>
+										</div>
+										<a href="javascript:;" class="btn btn-login">登&nbsp;&nbsp;录</a>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

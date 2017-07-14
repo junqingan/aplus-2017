@@ -1,0 +1,64 @@
+.border-radius(@radius){
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.text-overflow(){
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.text-overflow-more(@value){
+    overflow: hidden;
+    -webkit-line-clamp: @value;
+    -moz-line-clamp: @value;
+    -ms-line-clamp: @value;
+    -o-line-clamp: @value;
+    line-clamp: @value;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    word-break: break-all;
+}
+
+.box-shadow(@x,@y,@blur,@color){
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;  
+    -o-box-shadow: @arguments;  
+    box-shadow: @arguments;
+}
+
+.backgroundSize(@size){  
+    -webkit-background-size: @size;
+    -moz-background-size: @size;  
+    -ms-background-size: @size;  
+    -o-background-size: @size;  
+    background-size: @size;  
+}  
+
+.transition(@prop,@time,@ease){  
+    -webkit-transition: @arguments;  
+    -moz-transition: @arguments;  
+    -o-transition: @arguments;  
+    -ms-transition: @arguments;  
+    transition: @arguments;  
+}  
+.gradients (@x @y,@color1,@color2){
+  background: -webkit-linear-gradient(@x @y,@color1,@color2);
+  background: -o-linear-gradient(@x @y,@color1,@color2); 
+  background: -moz-linear-gradient(@x @y,@color1,@color2); 
+  background: linear-gradient(@x @y,@color1,@color2);
+}
+.user-select(@value){
+    -moz-user-select: @value; /*火狐*/
+    -webkit-user-select: @value; /*webkit浏览器*/
+    -ms-user-select: @value; /*IE10*/
+    -khtml-user-select: @value; /*早期浏览器*/
+    user-select: @value;
+}
+

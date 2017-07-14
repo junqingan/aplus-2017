@@ -1,0 +1,193 @@
+
+/* 日志查询 */
+.logquery{
+	position:relative;
+	background:@common-white;
+	overflow: hidden;
+	margin-top: 20px;
+	min-height: 840px;
+
+	.hd{
+		height: 60px;
+		width: 98%;
+	    padding: 0 1%;
+	    background: @common-white;
+	    margin: 5px 0;
+	    overflow: hidden;
+	    font-size:16px;
+	    ul{
+	    	.cf;
+	    	li{
+	    		.fl;
+	    		height: 40px;
+	    		line-height:38px;
+	    		margin-top: 10px;
+	    		margin-left: 1%;
+			
+			    &.laydate-input{
+			    	margin-left: 0;
+		    	}
+		    	&.operation-type{
+		    		.type-box{
+		    			width: 145px;
+						height: 38px;
+						padding:0 5px;
+					    color: #676262;
+		    			.border-radius(3px);
+						&:hover{
+							border: 1px solid @bg-color;
+						}
+		    		}
+		    	}
+		    	&.btns{
+		    		.cf;
+		    		.fr;
+		    		width: 255px;
+		    		a{
+		    			width:29%;
+		    			height: 38px;
+		    			line-height:38px;
+		    			margin: 0 5px;
+		    			text-align:center;
+		    			.gradients(to,bottom,#40c1ff,#0097ed);
+		    			color:@common-white;
+		    			.fl;
+		    			.border-radius(3px);
+		    			&.download{
+		    				background:#5fc537;
+		    				&:hover{
+								.gradients(to,bottom,#5fc537,#3fa018);
+			    			}
+		    			}
+		    			&:hover{
+							.gradients(to,bottom,#8fd0ff,#0097ed);
+		    			}
+		    		}
+		    	}
+	    	}
+	    }
+	    input{
+	    	width: 140px;
+	    	height: 38px;
+	    	padding:0 5px;
+	    	font-size:14px;
+	    	border: 1px solid #d1d1d1;
+	    	.border-radius(3px);
+	    	&:focus{ 
+	    			border: 1px solid @bg-color;
+				}
+	    }
+	    span{
+	    	display:inline-block;
+	    	padding:0 10px;
+	    	height: 40px;
+			color:#494949;
+			text-align:center;
+	    }
+	}
+
+
+
+
+	/*下载弹出浮窗样式*/
+
+	.popup{
+		width: 470px;
+		height: 220px;
+		padding:20px;
+		font-size:14px;
+		background:@common-white;
+		color:#333;
+		text-align:center;
+		line-height:40px;
+		border: 1px solid #c1c1c1;
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		transform:translate(-50%,-50%);
+		.border-radius(5px);
+		.box-shadow(0,0,10px,#999);
+		p{
+			margin-bottom: 50px;
+			font-size:18px;
+		}
+		/*保存路径*/
+		.location-row{
+			height: 40px;
+			width: 455px;
+			margin: 0 auto;
+			color:#494949;
+			position: relative;
+			.cf;
+			#download_location_label{
+				.fl;
+				margin-right: 10px;
+				font-size:16px;
+			}
+			#downloadLocationPath{
+				width: 280px;
+				height: 38px;
+				.fl;
+				line-height:40px;
+	    		border: 1px solid #d1d1d1;
+	    		.border-radius(3px);
+	    		&:focus{ 
+	    			border: 1px solid @bg-color;
+				}
+			}
+			#downloadLocationChangeButton{
+				position: absolute;
+			    top: 0;
+			    right: 0;
+			    width: 70px;
+			    height: 40px;
+			    background: @bg-color;
+			    color: @common-white;
+			    font-size: 14px;
+			    text-align: center;
+			    line-height: 40px;
+			    cursor: pointer;
+			    display: inline-block;
+			    margin-left: 8px;
+			    cursor: pointer;
+			    .border-radius(3px);	
+			    &:hover{
+					.gradients(to,bottom,@bg-color2,#0097ed);
+			    }
+			}
+		}
+		/* 保存 取消按钮*/
+		.common-btn{
+			width: 455px;
+			text-align:center;
+			margin: 25px auto 0;
+			.btn {
+				width: 114px;
+				height: 35px;
+				.gradients(to,bottom,#d5d5d5,#9b9b9b);
+				color: #666;
+				display: inline-block;
+				text-align: center;
+				line-height: 35px;
+				font-size: 16px;
+				padding: 0 10px;
+				margin:0 0 0 5px;
+				.border-radius(3px);
+				&:hover{
+					.gradients(to,bottom,#e3e3e3,#9B9B9B);
+				}
+			}
+			.save-btn {
+				.gradients(to,bottom,#40c1ff,#0097ed);
+				color: @common-white;
+				&:hover{
+					.gradients(to,bottom,#8fd0ff,#0097ed);
+				}
+			}
+		}
+	}
+
+}
+
+
+	

@@ -1,0 +1,145 @@
+
+.home-page{
+	margin-top: 20px;
+	overflow-y: hidden!important;
+	padding-bottom: 0px!important;
+	.home-page-top{
+		height: 190px;
+		padding-bottom: 20px;;
+		ul{
+			width: 100%;
+			.box-sizing(border-box);
+			.cf();
+			li{
+				width: 25%;
+				_width:431px;
+				float: left;
+				height: 190px;
+				padding-right: 20px;
+				.box-sizing(border-box);
+				a{
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+					color:@font-color;
+					background:@common-white;
+					font-weight:600;
+					p{
+						height: 30px;
+						line-height:30px;
+						font-size:14px;
+						width: 95%;
+						padding-left: 5%;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+
+/* 日志发版记录查询*/
+
+.home-page-con{
+	width: 100%;
+	height: 80px;
+	background:@common-white;
+	margin-bottom: 20px;
+	overflow-x: hidden;
+	ul{
+		.cf();
+		li{
+			float: left;
+			width: 25%;
+			height:80px;
+			color:@bg-color;
+			text-align: center;
+			font-size: 16px;
+			.box-sizing(border-box);
+			a{
+				.transition(background-color,.3s,linear);
+				width: 100%;
+				height: 100%;
+			    color: @bg-color;
+			    span{
+				    border-right: 1px solid #d4d4d4;
+				    width: 100%;
+				    display: inline-block;
+				    height: 40px;
+				    margin-top: 20px;
+				    line-height: 40px;
+			    }
+				&:hover{
+			   		 color:@common-white;
+
+					background:@bg-color;
+				}
+			}
+
+		}
+	}
+}
+
+
+.home-page-btm{
+	width: 100%;
+	height: 100%;
+	background:@common-white;
+	overflow: hidden;
+	.hd{
+		height: 40px;
+		width: 98%;
+		padding: 0 1%;
+		overflow-x: hidden;
+		line-height:40px;	
+		h3{
+			float: left;
+			width: 160px;
+			height: 40px;
+			font-size:16px;
+			cursor: pointer;
+		}
+		a{
+			width: 80px;
+			height: 40px;
+			float: right;
+			text-align:right;
+			color:#55adef;
+			&:hover{
+			    color: @bg-color;
+			}
+		}
+	}
+	.bd{
+		width: 98%;
+		height: 495px;
+		min-height: 495px;
+		padding: 0 1%;
+		font-size: 14px;	
+		.tableA{
+			width: 100%;
+			margin: 0;
+		}
+	}
+
+}
+
+/* 	数据统计图形*/
+.chart-box{
+	height: 160px;
+	width: 90%;
+	margin: 0 5%;
+	overflow: hidden;
+	.box-sizing(border-box);
+	position: relative;
+	canvas {
+		width: 100%;
+		height: 150px;
+		background-color: @common-white;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size:12px;
+	}
+}

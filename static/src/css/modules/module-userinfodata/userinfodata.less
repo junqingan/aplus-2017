@@ -1,0 +1,49 @@
+// 个人近期数据
+.userinfo-data{
+    padding-bottom: 30px;
+    padding-top: 20px;
+    background: #fff;
+    .recent-data{
+        width: 100%;
+        overflow: hidden;
+        .hd{
+            height: 40px;
+            line-height: 40px;
+            width: 98%;
+            padding: 0 1%;
+            margin: 5px 0;
+            overflow: hidden;
+            h3{
+                float: left;
+                width: 160px;
+                height: 40px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .goback{
+                width: 65px;
+                height: 40px;
+                background: @bg-color;
+                border-radius: 3px;
+                text-align: center;
+                color:@common-white;
+                float: right;
+                position: relative;
+                padding-left: 10px;
+                i{
+                    display: inline-block;
+                    width: 8px;
+                    height: 14px;
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    transform: translateY(-50%);	
+                    background:url(../assets/goback.png) no-repeat;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,214 @@
+.tableA {
+    min-width: 1190px;
+    width: 99%;
+    font-size: 12px;
+    margin-right: 1%;
+    word-break: break-all;
+
+    thead {
+        height: 40px;
+        line-height: 40px;
+        background: #daeeff;
+
+        tr {
+            th {
+                font-weight: bold;
+                color: #333;
+                text-align: center;
+            }
+            .diyinput {
+                position: relative;
+
+                &:before {
+                    content: '';
+                    background: url(../assets/icons.png) -3px -797px no-repeat;
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                }
+                &:checked:before {
+                    background: url(../assets/icons.png) -3px -824px no-repeat;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            background: #f2f2f2;
+            cursor: pointer;
+
+            &:nth-of-type(odd) {
+                background: #fff;
+            }
+            &:hover {
+                background: #daeeff;
+            }
+            td {
+                padding: 2px 0;
+                line-height: 24px;
+
+                a {
+                    display: inline;
+                }
+                .view {
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        top: 30px;
+                        left: 20px;
+                        padding: 4px;
+                        border: 2px solid #cccccc;
+                        background: #fff;
+                        display: none;
+                    }
+                    &.icons {
+                        &:hover {
+                            background: none;
+
+                            img {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .diyinput {
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        background: url(../assets/icons.png) -3px -797px no-repeat;
+                        position: absolute;
+                        width: 14px;
+                        height: 14px;
+                    }
+                    &:checked:before {
+                        background: url(../assets/icons.png) -3px -824px no-repeat;
+                    }
+                }
+                .icoModify {
+                    background: url(../assets/icons.png) no-repeat;
+                    background-position: 0 -30px;
+                    padding: 2px 9px;
+                    margin: 0 3px;
+                    vertical-align: middle;
+                }
+                .icons {
+                    height: 100%;
+                    display: inline-block;
+                    line-height: 40px;
+
+                    &:hover {
+                        background: #abe0ff;
+                    }
+                    .icon {
+                        display: inline-block;
+                        padding: 10px 10px;
+                        vertical-align: middle;
+                        background: url(../assets/icons.png) no-repeat;
+
+                        &.ico1 {
+                            background-position: 0 0;
+                        }
+                        &.ico2 {
+                            background-position: 0 -32px;
+                        }
+                        &.ico3 {
+                            background-position: 0 -65px;
+                        }
+                        &.ico4 {
+                            background-position: 0 -97px;
+                        }
+                        &.ico5 {
+                            background-position: 0 -129px;
+                        }
+                        &.ico6 {
+                            background-position: 0 -161px;
+                        }
+                        &.ico7 {
+                            background-position: 0 -193px;
+                        }
+                        &.ico8 {
+                            background-position: 0 -225px;
+                        }
+                        &.ico9 {
+                            background-position: 0 -258px;
+                        }
+                        &.ico10 {
+                            background-position: 0 -290px;
+                        }
+                        &.ico11 {
+                            background-position: 0 -322px;
+                        }
+                        &.ico12 {
+                            background-position: 0 -354px;
+                        }
+                        &.ico13 {
+                            background-position: 0 -386px;
+                        }
+                        &.ico14 {
+                            background-position: 0 -418px;
+                        }
+                        &.ico15 {
+                            background-position: 0 -450px;
+                        }
+                        &.ico16 {
+                            background-position: 0 -483px;
+                        }
+                        &.ico17 {
+                            background-position: 0 -515px;
+                        }
+                        &.ico18 {
+                            background-position: 0 -546px;
+                        }
+                        &.ico19 {
+                            background-position: 0 -580px;
+                        }
+                        &.ico20 {
+                            background-position: 0 -612px;
+                        }
+                        &.ico21 {
+                            background-position: 0 -644px;
+                        }
+                        &.ico22 {
+                            background-position: 0 -773px;
+                        }
+                        &.ico23 {
+                            background-position: 0 -845px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+ icon 数字对应名称  Y 对应Y轴值
+ 1 查看 Y:0 
+ 2 修改 Y:-32  
+ 3 删除 Y:-65
+ 4 收藏 Y:-97
+ 5 到指定页面  Y:-129
+ 6 彻底删除 Y:-161
+ 7 复制 Y:-193
+ 8 还原 Y:-225
+ 9 定时上下线 Y:-258
+ 10数据 Y:-290
+ 11屏蔽 Y:-322
+ 12定时上线 Y:-354
+ 13定时下线 Y:-386
+ 14上移 Y:-418
+ 15下移 Y:-450
+ 16置顶 Y:-483
+ 17导入 Y:-515
+ 18取消收藏 Y:-546
+ 19 Epg Y:-580
+ 20缩略图 Y:-612
+ 21？ Y:-644
+ 22展开 Y:-773 22-1 X:-36 Y:-773
+ 23推送 Y:-845
+ 24新建  Y:-676 hover X:-29 Y:-676
+ 25 diyinput（圆形） Y:-706  checked: Y:-739
+ 26 diyinput（方形） Y:-779  checked: Y:-824
+*/

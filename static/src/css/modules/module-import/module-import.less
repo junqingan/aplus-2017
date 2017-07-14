@@ -1,0 +1,94 @@
+/* 信息导入 */
+.module-import{
+    padding-bottom: 30px;
+    padding-top: 20px;
+    background: @common-white;
+    .import-hd{
+        width: 98%;
+        padding: 0 1%;
+        /*碎片id搜索*/
+        .search-box{
+            display: inline-block;
+            overflow: hidden;
+            height: 40px;
+            line-height: 40px;
+            margin: 5px 0;
+            input{
+                height: 38px;
+                line-height: 38px;
+                padding: 0 10px;
+                width: 180px;
+                border: 1px solid #cccccc;
+                .border-radius(3px);
+            }
+            select{
+                width: 85px;
+                height: 38px;
+                line-height: 38px;
+            }
+            
+        }
+        .btns{
+            width: 85px;
+            height: 40px;
+            text-align: center;
+            font-size: 14px;
+            background: #0097ed;
+            .border-radius(3px);
+            color: #fff;
+            float: right;
+            margin-left: 20px;
+        }
+        .create{
+            display:inline-block;
+            overflow: hidden;
+            height: 40px;
+            line-height: 40px;
+            margin: 5px 0;
+            margin-left: 20px;
+            span{
+                margin: 0 10px 0 0;
+                height: 40px;
+                select{
+                    height: 38px;
+                    line-height: 38px;
+                    width: 130px;
+                    option{
+                        display: inline-block;
+                        height: 38px;
+                    }
+                }
+            }
+        }
+
+    }
+    .import-bd{
+        width: 98%;
+        padding: 0 1%;
+        background: #fff;
+        // 面包屑导航
+        .breadcrumb{
+            height: 24px;
+            line-height: 24px;
+            margin: 5px 0;
+            display: inline-block;
+            a{
+                color:#6c6c6c;
+                height: 24px;
+                max-width: 180px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                .fl;
+                margin: 0 3px;
+                &:hover{
+                    color:#0097ed;
+                }
+            }
+            span{
+                .fl;
+                color:#6c6c6c;
+            }
+        }
+    }
+}

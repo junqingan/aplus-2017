@@ -1,0 +1,174 @@
+/*新增反馈 */
+.create-feature {
+	width: 780px;
+	margin: 0 auto;
+	padding: 10px 20px;
+	.infotitle{
+		font-size: 24px;
+		text-align: center;
+		margin: 20px auto;
+	}
+	ul {
+		li {
+			.cf;
+			line-height: 40px;
+			color: #7f7f7f;
+			font-size: 16px;
+			margin-bottom: 20px;
+
+			.detailed-info-tit {
+				float: left;
+				width: 200px;
+				text-align: right;
+
+				code {
+					color: red;
+				}
+				p {
+					line-height: 24px;
+					font-size: 14px;
+
+					&.email {
+						margin-right: 15px;
+					}
+				}
+			}
+			.detailed-info-txt {
+				float: left;
+				width: 520px;
+				margin-left: 10px;
+				position: relative;
+
+				.tit-input {
+					width: 400px;
+					height: 40px;
+					padding: 0 10px;
+					border: 1px solid #d1d1d1;
+					.border-radius(3px);
+					color: #666;
+				}
+				&.describec {
+					.describec-textarea {
+						display: block;
+						width: 400px;
+						height: 200px;
+						padding: 10px;
+						border: 1px solid #d1d1d1;
+						.border-radius(3px);
+						color: #666;
+					}
+				}
+
+				/*自定义单选框*/
+				&.diy-input {
+					color: #585858;
+					.cf;
+
+					input {
+						width: 14px;
+						height: 14px;
+						cursor: pointer;
+						margin-top: 13px;
+						.fl;
+
+						&::before {
+							content: '';
+							background: url(../assets/icons.png) no-repeat -3px -708px;
+							position: absolute;
+							width: 14px;
+							height: 14px;
+						}
+						&:checked::before {
+							background: url(../assets/icons.png) no-repeat -3px -741px;
+						}
+					}
+					label {
+						.fl;
+						display: inline-block;
+						width: auto;
+						padding: 0 10px 0 5px;
+						height: 40px;
+						line-height: 40px;
+						margin-right: 30px;
+						text-align: left;
+					}
+				}
+
+				/*上传文件*/
+				.requir {
+					float: left;
+					width: 400px;
+					height: 28px;
+					line-height: 28px;
+					border: 1px solid #ccc;
+					padding: 5px 10px;
+					.border-radius(3px);
+
+					&:hover {
+						border: 1px solid @bg-color;
+					}
+				}
+				.browse {
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 90px;
+					height: 40px;
+					background: @bg-color;
+					color: @common-white;
+					font-size: 18px;
+					text-align: center;
+					line-height: 40px;
+					cursor: pointer;
+					display: inline-block;
+					margin-left: 8px;
+					cursor: pointer;
+					.border-radius(3px);
+				}
+				.fileinput {
+					display: block;
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 90px;
+					height: 40px;
+					cursor: pointer;
+					opacity: 0;
+					filter: alpha(opacity=0);
+				}
+			}
+
+			/* 保存 取消按钮*/
+			.common-btn {
+				margin: 30px 0 0 210px;
+
+				.btn {
+					width: 127px;
+					height: 44px;
+					.gradients(to,bottom,#d5d5d5,#9b9b9b);
+					color: #666;
+					display: inline-block;
+					text-align: center;
+					line-height: 44px;
+					font-size: 16px;
+					padding: 0 30px;
+					.border-radius(3px);
+					.fl;
+					transition: background-color .3s;
+					&:hover {
+						.gradients(to,bottom,#e3e3e3,#9b9b9b);
+					}
+				}
+				.save-btn {
+					.gradients(to,bottom,#40c1ff,#0097ed);
+					margin-right: 40px;
+					transition:background-color .3s;
+					color: @common-white;
+					&:hover{
+						.gradients(to,bottom,#8fd0ff,#0097ed);
+					}
+				}
+			}
+		}
+	}
+}

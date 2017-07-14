@@ -1,0 +1,126 @@
+
+
+/*分页样式*/
+.paged {
+	height: 40px;
+	width: 98%;
+	padding: 0 1%;
+	background: @common-white;
+	margin: 5px 0;
+	overflow: hidden;
+	.row {
+		.cf;
+	    font-size: 14px;
+	    height: 32px;
+	    margin-top: 5px;
+		line-height:32px;
+		color:#6c6c6c;
+
+		/*左侧条数*/
+		.row-l {
+			.fl;
+    		.dataTables_info{
+    			margin-right: 10px;
+    			code{
+    				display: inline-block;
+    				padding:0 5px;
+
+    			}
+    		}
+		}
+		/*左侧显示条数*/
+		.dataTables_length {
+			.fl;
+			.form-control{
+				width: 50px;
+				height: 32px;
+				color:#6c6c6c;
+			}
+		}
+		/* 右侧分页tab*/
+		.row-r {
+			.fr;
+
+			a {
+				padding: 0px 8px;
+				float: left;
+				display: block;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				cursor: pointer;
+				.border-radius(2px);
+				background-color:@common-white;
+				margin: 0px 3px;
+				border:1px solid #ddd;
+				color:#6c6c6c;
+				&:hover{
+					color:@bg-color;
+					.border-radius(2px);
+					border: 1px solid @bg-color;
+				}
+				&.otherBtns-index:hover{
+					background: @bg-color;
+				}
+			}
+			.page_div {
+				height: 32px;
+				.cf;
+
+				.otherBtns {
+					.fl;
+					height: inherit;
+
+				}
+				.jumpBtns {
+					float: left;
+					height: inherit;
+					padding-left:10px;
+					input {
+						width: 34px;
+						float: left;
+						height: 30px;
+						outline: none;
+						text-align: center;
+						.border-radius(2px);
+						border:1px solid #ddd;
+						margin: 0px 3px;
+						line-height: 30px;
+					}
+					span{
+						float: left;
+					}
+					.jump_a{
+						background:#ddd;
+						margin-left: 10px;
+						&:hover{
+							background:@bg-color;
+							color:@common-white;
+						}
+					}
+				}
+			}
+		}
+		.centerBtns{
+			float: left; height: inherit; position: relative; overflow: hidden; width: 189px;
+			ul{
+				position: absolute; height: inherit; list-style: none; left: 0px; top: 0px; margin: 0px; padding: 0px; width: 5000px;
+				li{
+					display: block; float: left; height: inherit; overflow: hidden; margin: 0px 3px;
+					a{
+						width: 23px;margin: 0!important;
+						
+						&.active{
+							background:@bg-color;
+							color:@common-white;
+							.border-radius(2px);
+							border: 1px solid @bg-color;
+							
+						}
+					}
+				}
+			}
+		}
+
+	}
+}

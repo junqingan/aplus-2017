@@ -1,0 +1,236 @@
+.module-collect {
+	min-height: 840px;
+	margin-top: 20px;
+	background: @common-white;
+	overflow: hidden;
+	/*收藏节点样式*/
+	.collectdebris-form {
+		width: 480px;
+		height: 500px;
+		margin: 100px auto 200px;
+		text-align: center;
+		.hd {
+			font-size: 14px;
+			color: @common-333;
+			padding: 0;
+			min-height: inherit;
+			margin: 10px auto;
+			p {
+				width: 480px;
+				line-height: 32px;
+				overflow: hidden;
+				code {
+					font-size: 14px;
+					color: @font-color;
+					margin: 0 5px;
+				}
+			}
+		}
+		.bd {
+			overflow: visible;
+			min-height: inherit!important;
+			.ch-pop {
+				width: 368px;
+				height: 40px;
+				text-align: left;
+				border: 1px solid #d1d1d1;
+				.border-radius(3px);
+				padding-left: 10px;
+				line-height: 40px;
+				font-size: 16px;
+				color: #222;
+				position: relative;
+				margin: 40px auto;
+				a {
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					i {
+						display: block;
+						position: absolute;
+						right: 20px;
+						top: 18px;
+						width: 0;
+						height: 0;
+						font-size: 0;
+						line-height: 0;
+						border-width: 5px;
+						border-color: rgb(152, 152, 152) transparent transparent transparent;
+						border-style: solid dashed dashed dashed;
+					}
+				}
+				&:hover {
+					a {
+						i {
+							right: 20px;
+							top: 10px;
+							border-color: transparent transparent rgb(152, 152, 152) transparent;
+							border-style: dashed dashed solid dashed;
+						}
+					}
+					.morech {
+						display: block;
+					}
+				}
+			}
+			.morech {
+				width: 378px;
+				height: auto;
+				margin: 0 auto;
+				position: absolute;
+				top: 40px;
+				left: -1px;
+				border: 1px solid #d1d1d1;
+				border-top: 0;
+				display: none;
+				overflow: hidden;
+				overflow-y: auto;
+				li {
+					width: 358px;
+					height: 40px;
+					padding: 0 10px;
+					line-height: 40px;
+					font-size: 14px;
+					background: @common-white;
+					&:hover {
+						background: #e8f1f7;
+					}
+				}
+				&::-webkit-scrollbar {
+					width: 10px;
+					height: 10px;
+					background-color: #F5F5F5;
+				}
+				&::-webkit-scrollbar-track {
+					-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+					-ms-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+					-o-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+					box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+					border-radius: 10px;
+					background-color: #F5F5F5;
+				}
+				&::-webkit-scrollbar-thumb {
+					border-radius: 10px;
+					-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+					-moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+					-ms-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+					-o-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+					box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+					background-color: #969696;
+				}
+			}
+			.common-td {
+				width: 380px;
+				text-align: center;
+				margin: 45px auto;
+				.common-btn {
+					width: 70px;
+					height: 44px;
+					background: #d5d5d5;
+					color: #666;
+					display: inline-block;
+					text-align: center;
+					line-height: 44px;
+					font-size: 16px;
+					padding: 0 30px;
+					.border-radius(3px);
+					&.save-btn {
+						.gradients(to, bottom, #40c1ff, #0097ed);
+						color: @common-white;
+						margin-right: 20px;
+						&:hover {
+							.gradients(to, bottom, #8fd0ff, #0097ed);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*收藏管理*/
+
+.collect-manage {
+	.cf;
+	.hd {
+		width: 98%;
+		padding: 0 1%;
+		margin: 5px 0;
+		.cf;
+		a {
+			padding: 0 10px;
+			height: 40px;
+			line-height: 40px;
+			margin-right: 15px;
+			color: @font-color;
+			.fl;
+			i {
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin-right: 5px;
+				background: url(../assets/icons.png) no-repeat;
+				vertical-align: sub;
+			}
+			&.icon24 {
+				i {
+					background-position: 0 -674px;
+				}
+			}
+			&.icon2 {
+				i {
+					background-position: 0 -30px;
+				}
+			}
+			&.icon3 {
+				i {
+					background-position: 0 -60px;
+				}
+			}
+			&.icon18 {
+				i {
+					background-position: 0 -545px;
+				}
+			}
+			&:hover {
+				background: #e8f1f7;
+				&.icon24 {
+					i {
+						background-position: -28px -674px;
+					}
+				}
+			}
+		}
+	}
+	.bd {
+		width: 98%;
+		padding: 0 1%;
+		.debris-path {
+			line-height: 24px;
+			.account {
+				margin-left: 20px;
+				.con-title {
+					display: block;
+					overflow: hidden;
+					height: 24px;
+					margin: 10px 0;
+					font-weight: 600;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					padding-left: 25px;
+					background: url(../assets/icons.png) no-repeat;
+					background-position: 0px -793px;
+					cursor: pointer;
+					&.active {
+						background-position: 0px -820px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,103 @@
+
+/*个人信息模块样式+修改密码*/
+.module-personal {
+	width: 100%;
+	height: 100%;
+	min-height: 800px;
+	background: #f9f9f9;
+	overflow: hidden;
+	.form {
+		width: 600px;
+		height: 500px;
+		margin: 100px auto 200px;
+		.hd {
+			height: 60px;
+			line-height: 60px;
+			font-size: 22px;
+			letter-spacing: 2px;
+			text-align: center;
+			cursor: default;
+			margin-bottom: 30px;
+		}
+		.bd {
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+			.common-tr {
+				height: 44px;
+				font-size: 16px;
+				color: #5b5b5b;
+				line-height: 44px;
+				overflow: hidden;
+				margin-bottom: 14px;
+				.common-th {
+					width: 100px;
+					float: left;
+					height: 44px;
+					text-align: right;
+					margin-right: 10px;
+					letter-spacing: 2px
+				}
+				.common-td {
+					width: 400px;
+					height: 44px;
+					float: left;
+					span {
+						width: 310px;
+						height: 44px;
+						line-height: 44px;
+						display: inline-block;
+						padding-left: 10px;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+					.common-text {
+						display: inline-block;
+						float: left;
+						width: 378px;
+						height: 42px;
+						line-height: 42px;
+						padding: 0 10px;
+						border: 1px solid #d1d1d1;
+						.border-radius(3px);
+						&:focus {
+							width: 376px;
+							height: 40px;
+							line-height: 40px;
+							padding: 0 10px;
+							border: 2px solid #93cef0;
+						}
+					}
+				}
+				&.save {
+					margin-top: 30px;
+				}
+				.common-btn {
+					width: 127px;
+					height: 44px;
+					.gradients(to,bottom,#d5d5d5,#9b9b9b);
+					color: #666;
+					display: inline-block;
+					text-align: center;
+					line-height: 44px;
+					font-size: 16px;
+					padding: 0 30px;
+					.border-radius(3px);
+					.fl;
+					&:hover{
+						.gradients(to,bottom,#e3e3e3,#9B9B9B);
+					}
+				}
+				.save-btn {
+				    .gradients(to,bottom,#40c1ff,#0097ed);
+					color: @common-white;
+					margin-right: 20px;
+					&:hover{
+						.gradients(to,bottom,#8fd0ff,#0097ed);
+					}
+				}
+			}
+		}
+	}
+}

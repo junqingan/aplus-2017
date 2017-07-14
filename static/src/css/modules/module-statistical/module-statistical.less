@@ -1,0 +1,109 @@
+
+/* 数据统计页面*/
+.statistical{
+	background:#dee5e9;
+	.hd{
+		background:@common-white;
+		height: 56px;
+		margin: 20px 0;
+		width: 98%;
+	    padding: 0 1%;
+        overflow: hidden;
+	    font-size:16px;
+
+		ul{
+	    	.cf;
+	    	li{
+	    		.fl;
+	    		height: 40px;
+	    		line-height:38px;
+	    		margin-top: 10px;
+	    		margin-left: 2%;
+			
+			    &.laydate-input{
+			    	margin-left: 0;
+		    	}
+		    	&.operation-type{
+		    		form{
+		    			display:inline-block;
+						height: 38px;
+						padding:0 5px;
+					    color: #676262;
+		    			.border-radius(3px);
+						
+		    		}
+		    		input{
+		    			width: 14px;
+		    			height: 14px;
+		    			vertical-align: initial;
+		    			cursor: pointer;
+		    			&::before {
+						    content: '';
+							background: url(../assets/icons.png) no-repeat -3px -708px;
+						    position: absolute;
+						    width: 14px;
+						    height: 14px;
+						}
+						&:checked::before {
+							background: url(../assets/icons.png) no-repeat -3px -741px;
+						}
+
+		    		}
+		    		label {
+					    display: inline-block;
+					    padding:0 5px;
+					    height: 40px;
+					    line-height: 40px;
+					    text-align: left;
+					}
+		    	}
+		    	&.btns{
+		    		.cf;
+		    		.fr;
+		    		a{
+		    			width: 85px;
+		    			height: 38px;
+		    			line-height:38px;
+		    			margin: 0 5px;
+		    			text-align:center;
+		    			background:@bg-color;
+		    			color:@common-white;
+		    			.fl;
+		    			.border-radius(3px);
+		    			&.goback{
+		    				background:#d5d5d5;
+		    				color:#6c6c6c;
+		    				&:hover{
+								.gradients(to,bottom,#e3e3e3,#898989);
+			    			}
+		    			}
+		    			&:hover{
+							.gradients(to,bottom,@bg-color2,@bg-color);
+		    			}
+		    		}
+		    	}
+	    	}
+	    }
+	    input{
+	    	width: 130px;
+	    	height: 32px;
+	    	padding:0 5px;
+	    	font-size:14px;
+	    	border: 1px solid #d1d1d1;
+	    	.border-radius(3px);
+	    	&:focus{ 
+	    			border: 1px solid @bg-color;
+				}
+	    }
+	    span{
+	    	display:inline-block;
+	    	padding:0 10px;
+	    	height: 40px;
+			color:#494949;
+			text-align:center;
+	    }
+	}
+	.bd{
+		background:@common-white;
+	}
+}
